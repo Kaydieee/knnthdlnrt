@@ -299,7 +299,9 @@ h2 {
 
 .about-mess {
     color: white;
-}
+    text-align: justify; /* Justifies the text */
+    width: 80%; /* Optional: set a width for the paragraph */
+    margin: 0 auto; /* Centers the paragraph block horizontally */}
 
 /* Skills Section */
 #skills {

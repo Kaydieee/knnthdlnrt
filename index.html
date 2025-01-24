@@ -64,8 +64,7 @@
             <p>
                 I am a passionate and hardworking web developer with experience in creating responsive and visually appealing websites.
                 Currently pursuing a degree in IT at STI College, I strive to combine creativity with technical expertise to deliver excellent results.
-            </p>
-            <p>
+
                 My journey into web development began with a fascination for how websites work and evolved into a dedicated pursuit of creating meaningful digital experiences. 
                 I specialize in crafting responsive designs and optimizing web applications to enhance user engagement. Apart from coding, I am also passionate about learning new 
                 technologies and methodologies to stay updated in this ever-evolving field.
@@ -91,23 +90,23 @@
         <h2>Services</h2>
         <div class="service">
             <h3>Web Development</h3>
-            <p>Creating responsive and user-friendly websites.</p>
+            <p class="service-descript">Creating responsive and user-friendly websites.</p>
         </div>
         <div class="service">
             <h3>UI/UX Design</h3>
-            <p>Designing clean and modern user interfaces.</p>
+            <p class="service-descript">Designing clean and modern user interfaces.</p>
         </div>
         <div class="service">
             <h3>Video Editing</h3>
-            <p>Editing and enhancing videos to create visually engaging content.</p>
+            <p class="service-descript">Editing and enhancing videos to create visually engaging content.</p>
         </div>
         <div class="service">
             <h3>Hardware and Software Maintenance</h3>
-            <p>Providing services such as hardware repairs, software installation, system formatting, hardware cleaning, and operating system setup.</p>
+            <p class="service-descript">Providing services such as hardware repairs, software installation, system formatting, hardware cleaning, and operating system setup.</p>
         </div>
         <div class="service">
             <h3>LAN Cable Networking</h3>
-            <p>Setting up and managing reliable LAN cable networks for seamless connectivity.</p>
+            <p class="service-descript">Setting up and managing reliable LAN cable networks for seamless connectivity.</p>
         </div>
     </section>
 
@@ -162,9 +161,36 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({ offset: 0 });
-
+    
         const goUpBtn = document.getElementById('goUpBtn');
-
+        const checkbox = document.getElementById('checkbox');
+    
+        // Function to set theme based on the checkbox state
+        function setTheme() {
+            const isDarkMode = checkbox.checked;
+            document.body.classList.toggle('dark-mode', isDarkMode);
+            document.body.classList.toggle('light-mode', !isDarkMode);
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        }
+    
+        // Load theme from localStorage on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                checkbox.checked = true;
+                document.body.classList.add('dark-mode');
+                document.body.classList.remove('light-mode');
+            } else {
+                checkbox.checked = false;
+                document.body.classList.add('light-mode');
+                document.body.classList.remove('dark-mode');
+            }
+        });
+    
+        // Add change event listener to the checkbox
+        checkbox.addEventListener('change', setTheme);
+    
+        // Scroll-to-top button functionality
         window.onscroll = function () {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 goUpBtn.style.display = 'flex';
@@ -172,20 +198,17 @@
                 goUpBtn.style.display = 'none';
             }
         };
-
+    
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        const checkbox = document.getElementById('checkbox');
-        checkbox.addEventListener('change', () => {
-            document.body.classList.toggle('dark-mode', checkbox.checked);
-            document.body.classList.toggle('light-mode', !checkbox.checked);
-        });
+        
     </script>
+    
 
 </html>
 
 <!--Bugs-->
 
-<!-- 1. When I refresh, it turns into light mode when dark mode -->
+<!-- 1. When i refresh. it's not automatic going up-->
