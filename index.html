@@ -3,21 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Kenneth Del Norte | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
-
 </head>
 
 <body class="light-mode">
-
     <!-- Navigation -->
-    <nav>
+    <nav class="navbar">
         <div class="nav-container">
             <div class="logo" data-aos="fade-down" data-aos-duration="1500">
-                <span class="logo">KNNTHDLNRT</span>
+                <span>KNNTHDLNRT</span>
             </div>
             <div class="links" data-aos="fade-down" data-aos-duration="1500">
                 <a href="#home">Home</a>
@@ -27,127 +28,174 @@
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
+            <div class="theme-toggle">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <label for="checkbox" class="label"></label>
+            </div>
         </div>
     </nav>
 
     <!-- Main -->
     <section id="home">
         <div class="main-container">
-            <div class="image" data-aos="zoom-in-right" data-aos-duration="3000">
-                <img class="pic" src="Ken.jpeg" alt="Kenneth">
+            <div class="content" data-aos="fade-right" data-aos-duration="1500">
+                <h1>Hi, I'm <span>Kenneth</span></h1>
+                <h2 class="developer-text">I'm a Developer</h2>
+                <p class="description">I'm an aspiring web developer and a dedicated IT student at STI College. I have a passion for creating visually appealing and user-friendly web applications.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kenneth-del-norte-705219302/" target="_blank" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/knnthdlnrt" target="_blank" data-aos="zoom-in" data-aos-delay="400">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://github.com/Kaydieee" target="_blank" data-aos="zoom-in" data-aos-delay="600">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/keindlnrt/" target="_blank" data-aos="zoom-in" data-aos-delay="800">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <a href="Kenneth_CV_OJT.pdf" download="">
+                    <button class="download-cv" data-aos="fade-up" data-aos-delay="1000">
+                        Download CV
+                    </button>
+                </a>
             </div>
-            <div class="content" data-aos="fade-left" data-aos-duration="3000">
-                <div class="check-label">
-                    <input type="checkbox" name="checkbox" id="checkbox" />
-                    <label for="checkbox" class="label"> </label>
-                </div>
-                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">Hi I'm <span>Kenneth</span></h1>
-                <h2 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">I'm a <span>Developer</span></h2>
-                <p  class="description" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1100">I'm an aspiring web developer and a dedicated IT student at STI College. I have a passion for creating visually appealing and user-friendly web applications.</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/kenneth-del-norte-705219302/" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/knnthdlnrt" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://github.com/Kaydieee" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/keindlnrt/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                <div class="button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700" >
-                    <button class="btn btn-success" href="Kenneth_CV">Download CV</button>
-                </div>
+            <div class="image" data-aos="fade-left" data-aos-duration="1500">
+                <img src="Neth.jpg" alt="Kenneth Del Norte" class="profile-image">
             </div>
         </div>
     </section>
 
     <!-- About -->
     <section id="about">
-        <h2>About Me</h2>
-        <div class="about-mess">
-            <p>
-                I am a passionate and hardworking web developer with experience in creating responsive and visually appealing websites.
-                Currently pursuing a degree in IT at STI College, I strive to combine creativity with technical expertise to deliver excellent results.
-
-                My journey into web development began with a fascination for how websites work and evolved into a dedicated pursuit of creating meaningful digital experiences. 
-                I specialize in crafting responsive designs and optimizing web applications to enhance user engagement. Apart from coding, I am also passionate about learning new 
-                technologies and methodologies to stay updated in this ever-evolving field.
-            </p>
-            <p>
-                When I'm not coding, you can find me exploring the latest tech trends, reading about innovative designs, or brainstorming new project ideas. I believe in 
-                lifelong learning and collaboration as the keys to success in the tech industry.
-            </p>
+        <div class="section-container">
+            <h2 data-aos="fade-down">About Me</h2>
+            <div class="about-content" data-aos="fade-up">
+                <p>I am a passionate and hardworking web developer with experience in creating responsive and visually appealing websites. Currently pursuing a degree in IT at STI College, I strive to combine creativity with technical expertise to deliver excellent results.</p>
+                <p>My journey into web development began with a fascination for how websites work and evolved into a dedicated pursuit of creating meaningful digital experiences. I specialize in crafting responsive designs and optimizing web applications to enhance user engagement.</p>
+                <p>When I'm not coding, you can find me exploring the latest tech trends, reading about innovative designs, or brainstorming new project ideas. I believe in lifelong learning and collaboration as the keys to success in the tech industry.</p>
+            </div>
         </div>
     </section>
 
     <!-- Skills -->
     <section id="skills">
-        <h2>My Skills</h2>
-            <div class="my-skills">
-                <p>HTML, CSS, JavaScript, Bootstrap, Web Developing, Programming, Data Entry, Editing Pictures, Video Editing,</p>
-                <p>Basic Computer Literacy Skills, Computer Hardware, Typing, Basic Microsoft Office and Encoding</p>
+        <div class="section-container">
+            <h2 data-aos="fade-down">My Skills</h2>
+            <div class="skills-grid" data-aos="fade-up">
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <ul>
+                        <li>UI/UX Design</li>
+                        <li>Photo Editing</li>
+                        <li>Video Editing</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technical</h3>
+                    <ul>
+                        <li>Computer Hardware</li>
+                        <li>Network Setup</li>
+                        <li>System Maintenance</li>
+                    </ul>
+                </div>
             </div>
+        </div>
     </section>
 
     <!-- Services -->
     <section id="service">
-        <h2>Services</h2>
-        <div class="service">
-            <h3>Web Development</h3>
-            <p class="service-descript">Creating responsive and user-friendly websites.</p>
-        </div>
-        <div class="service">
-            <h3>UI/UX Design</h3>
-            <p class="service-descript">Designing clean and modern user interfaces.</p>
-        </div>
-        <div class="service">
-            <h3>Video Editing</h3>
-            <p class="service-descript">Editing and enhancing videos to create visually engaging content.</p>
-        </div>
-        <div class="service">
-            <h3>Hardware and Software Maintenance</h3>
-            <p class="service-descript">Providing services such as hardware repairs, software installation, system formatting, hardware cleaning, and operating system setup.</p>
-        </div>
-        <div class="service">
-            <h3>LAN Cable Networking</h3>
-            <p class="service-descript">Setting up and managing reliable LAN cable networks for seamless connectivity.</p>
+        <div class="section-container">
+            <h2 data-aos="fade-down">Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and user-friendly websites that deliver exceptional user experiences.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing clean and modern user interfaces that enhance user engagement.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-video"></i>
+                    <h3>Video Editing</h3>
+                    <p>Creating engaging video content with professional editing and effects.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="800">
+                    <i class="fas fa-laptop-medical"></i>
+                    <h3>Hardware & Software</h3>
+                    <p>Comprehensive computer maintenance and repair services.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects -->
     <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Login Page Interface</h3>
-            <p>This project showcases a modern and responsive login page design built using HTML, CSS, and JavaScript. 
-            Featuring a sleek background and a user-friendly interface, it includes input fields for email and password, along with options for password recovery and account creation. This design emphasizes simplicity and functionality, making it suitable for web applications and platforms.
-            </p>
-            <a href="Sample Project.png" download>Download project preview image</a>
-        </div>
-        <div class="project">
-            <h3>Cinematic Video Intro</h3>
-            <p>This project highlights a cinematic video intro created with advanced editing techniques and special effects. esigned to captivate viewers, it features dynamic transitions, synchronized audio, and a visually striking theme, making it perfect for branding, presentations, or promotional content.</p>
-            <a href="Sample Video.mp4" download>Download project preview video</a>
-        </div>
-        <div class="project">
-            <h3>LAN Cabling</h3>
-            <p>This project demonstrates the process of creating and organizing LAN cables for network setups. It includes step-by-step instructions for terminating cables with RJ45 connectors, testing for continuity, and ensuring proper alignment based on Ethernet standards. Perfect for IT students and professionals, it highlights the importance of structured cabling in achieving efficient network performance.</p>
-            <a href="Sample Lan Cabling.jpg" download>Download project preview image</a>
-        </div>
-        <div class="project">
-            <h3>Project 4</h3>
-            <p>Project description.</p>
-            <a href="#" download><!--Insert download here--></a>
-        </div>
-        <div class="project">
-            <h3>Project 5</h3>
-            <p>Project description.</p>
-            <a href="#" download><!--Insert download here--></a>
+        <div class="section-container">
+            <h2 data-aos="fade-down">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="Sample Project.png" alt="Login Page Interface">
+                    </div>
+                    <div class="project-content">
+                        <h3>Login Page Interface</h3>
+                        <p>A modern and responsive login page design built using HTML, CSS, and JavaScript.</p>
+                        <a href="Sample Project.png" download class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="Sample Video Thumbnail.png" alt="Cinematic Video Intro">
+                    </div>
+                    <div class="project-content">
+                        <h3>Cinematic Video Intro</h3>
+                        <p>A dynamic video intro featuring special effects and synchronized transitions.</p>
+                        <a href="Sample Video.mp4" download class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="Sample Lan Cabling.jpg" alt="LAN Cabling">
+                    </div>
+                    <div class="project-content">
+                        <h3>LAN Cabling</h3>
+                        <p>Professional network setup, structured cabling implementation, and maintenance services.</p>
+                        <a href="Sample Lan Cabling.jpg" download class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-des">
-            <p><i class="fa-regular fa-envelope"> :</i> kennethdelnorte5@gmail.com</p>
-            <p><i class="fa-solid fa-phone"> :</i> +639 91 463 0496</p>
+        <div class="section-container">
+            <h2 data-aos="fade-down">Contact Me</h2>
+            <div class="contact-info" data-aos="fade-up">
+                <div class="contact-item">
+                    <i class="far fa-envelope"></i>
+                    <p>kennethdelnorte5@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+639 91 463 0496</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -155,60 +203,64 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-</body>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({ offset: 0 });
-    
-        const goUpBtn = document.getElementById('goUpBtn');
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+            once: true
+        });
+
+        // Theme toggle
         const checkbox = document.getElementById('checkbox');
-    
-        // Function to set theme based on the checkbox state
-        function setTheme() {
-            const isDarkMode = checkbox.checked;
-            document.body.classList.toggle('dark-mode', isDarkMode);
-            document.body.classList.toggle('light-mode', !isDarkMode);
-            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-        }
-    
-        // Load theme from localStorage on page load
+        const body = document.body;
+
+        // Load saved theme
         document.addEventListener('DOMContentLoaded', () => {
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme === 'dark') {
                 checkbox.checked = true;
-                document.body.classList.add('dark-mode');
-                document.body.classList.remove('light-mode');
-            } else {
-                checkbox.checked = false;
-                document.body.classList.add('light-mode');
-                document.body.classList.remove('dark-mode');
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
             }
         });
-    
-        // Add change event listener to the checkbox
-        checkbox.addEventListener('change', setTheme);
-    
-        // Scroll-to-top button functionality
-        window.onscroll = function () {
+
+        // Theme toggle handler
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Scroll to top button
+        const goUpBtn = document.getElementById('goUpBtn');
+
+        window.onscroll = () => {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 goUpBtn.style.display = 'flex';
             } else {
                 goUpBtn.style.display = 'none';
             }
         };
-    
+
         function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
 
-        
+        // Ensure page starts at top on refresh
+        window.onbeforeunload = () => {
+            window.scrollTo(0, 0);
+        };
     </script>
-    
-
+</body>
 </html>
-
-<!--Bugs-->
-
-<!-- 1. When i refresh. it's not automatic going up-->
