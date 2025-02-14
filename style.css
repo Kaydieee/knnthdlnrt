@@ -164,6 +164,7 @@ body.dark-mode {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     opacity: 0.9;
+    text-align: justify;
 }
 
 .image {
